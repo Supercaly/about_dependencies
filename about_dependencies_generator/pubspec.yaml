@@ -1,8 +1,8 @@
 name: about_dependencies
-description: A new Flutter package.
+description: Automatically generate dart file with informations about used dependencies in pubspec.yaml.
 version: 0.0.1
-author:
 homepage:
+repository:
 
 environment:
   sdk: ">=2.7.0 <3.0.0"

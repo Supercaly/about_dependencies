@@ -1,14 +1,31 @@
-# aboutdependenciesgenerator
+# about_dependencies
 
-A new Flutter package.
+Automatically generate dart file with informations about used dependencies in pubspec.yaml.
 
-## Getting Started
+## Usage
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+To use this package add `about_dependencies` as a [dependency in your pubspec.yaml file.](https://flutter.dev/docs/development/packages-and-plugins/using-packages)
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+Add the `@Dependencies` annotation to your class.
+Don't forget to add part statement after all the imports `part 'your-file.g.dart`
+
+Use the `dependencies` list of maps where-ever you want.
+Import the library.
+
+```dart
+import 'package:about_dependencies/annotations.dart';
+
+part 'example_dependencies.g.dart';
+
+@Dependencies()
+class ExampleDependencies {
+  void use() {
+    // Use the generated code like a normal list object
+    print(dependencies);
+  }
+}
+```
+
+## Code Generation
+
+To generate the dependencies run the command: `flutter pub run build_runner build`
