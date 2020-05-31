@@ -5,7 +5,7 @@ import 'package:dart_style/dart_style.dart';
 class CodeWriter {
   /// Generate a const [List<Map<String, String>>] from the
   /// given input
-  String write(List<Map<String, String>> input) {
+  static String write(List<Map<String, String>> input) {
     var mapsList = [];
     for (var m in input) {
       mapsList.add(literalConstMap(m, Reference("String"), Reference("String")));

@@ -1,11 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
-part of 'example_dependencies.dart';
-
-// **************************************************************************
-// AboutDependenciesGenerator
-// **************************************************************************
-
+// DO NOT EDIT. This is code generated via package:about_dependencies/generate.dart
+  
 // Dependencies list
 const List<Map<String, String>> dependencies = [
   <String, String>{
@@ -36,3 +30,5 @@ const List<Map<String, String>> dependencies = [
         'Compute the Power Spectral Density (PSD) on Dart. This package runs everywhere dart runs.'
   }
 ];
+
+  

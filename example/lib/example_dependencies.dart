@@ -1,9 +1,6 @@
 
-import 'package:about_dependencies/annotations.dart';
+import 'generated/dependencies.g.dart';
 
-part 'example_dependencies.g.dart';
-
-@Dependencies()
 class ExampleDependencies {
   void use() {
     // Use the generated code like a normal list object

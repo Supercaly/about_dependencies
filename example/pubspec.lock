@@ -11,7 +11,7 @@ packages:
   about_dependencies:
     dependency: "direct dev"
     description:
-      path: "../about_dependencies_generator"
+      path: ".."
       relative: true
     source: path
     version: "0.0.1"

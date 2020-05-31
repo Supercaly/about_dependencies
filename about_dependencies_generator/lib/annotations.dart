@@ -1,4 +1,0 @@
-
-class Dependencies {
-  const Dependencies();
-}

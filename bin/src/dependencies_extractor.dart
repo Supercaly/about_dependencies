@@ -1,10 +1,11 @@
 
 import 'dart:io';
 
-import 'package:about_dependencies/src/description_getter.dart';
-import 'package:about_dependencies/src/unknown_yaml_file_exception.dart';
 import 'package:pubspec_parse/pubspec_parse.dart';
 import 'package:path/path.dart' as path;
+
+import 'description_getter.dart';
+import 'unknown_yaml_file_exception.dart';
 
 class DependenciesExtractor {
   final DescriptionGetter descriptionGetter;
