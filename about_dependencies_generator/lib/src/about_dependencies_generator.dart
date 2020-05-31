@@ -1,33 +1,23 @@
 
-import 'dart:io';
-
+import 'package:about_dependencies/src/dependencies_extractor.dart';
 import 'package:analyzer/dart/element/element.dart';
 import 'package:build/build.dart';
 import 'package:source_gen/source_gen.dart';
-import 'package:pubspec_yaml/pubspec_yaml.dart';
 
 import '../annotations.dart';
+import 'code_writer.dart';
 
 class AboutDependenciesGenerator extends GeneratorForAnnotation<Dependencies> {
   @override
   Future<String> generateForAnnotatedElement(Element element, ConstantReader annotation, BuildStep buildStep) async {
-    final packageDirectory = Directory.current;
-    final pubspecFile = File("${packageDirectory.path}/pubspec.yaml");
 
-    final existFile = await pubspecFile.exists();
-    if (!existFile) {
-      throw Exception("cannot find pubspec.yaml file under $packageDirectory");
-    }
+    // Extract the dependencies into a list
+    final depList = await DependenciesExtractor().extract();
 
-    final String pubspecString = await pubspecFile.readAsString();
-    final pubspecYaml = pubspecString.toPubspecYaml();
-
-    // Extract dependencies keys
-    pubspecYaml.dependencies;
-
+    // Generate dart code from the dependency list
     return '''
-    final test = 0;
-    // ${pubspecYaml.dependencies.toString()}
+    // Dependencies list
+    ${CodeWriter().write(depList)}
     ''';
   }
 }
