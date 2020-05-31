@@ -6,6 +6,6 @@ part 'example_dependencies.g.dart';
 @Dependencies()
 class ExampleDependencies {
   void use() {
-    final a = test;
+
   }
 }

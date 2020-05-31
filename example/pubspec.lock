@@ -113,6 +113,15 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.2"
+  circular_check_box:
+    dependency: "direct main"
+    description:
+      path: "."
+      ref: development
+      resolved-ref: "10ebf82a3722ec312468d65ae118a19fac20b8fa"
+      url: "git://github.com/Supercaly/circular_check_box"
+    source: git
+    version: "1.0.1"
   clock:
     dependency: transitive
     description:
@@ -176,6 +185,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.3.6"
+  dio:
+    dependency: transitive
+    description:
+      name: dio
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "3.0.9"
   fake_async:
     dependency: transitive
     description:
@@ -200,13 +216,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  functional_data:
-    dependency: transitive
-    description:
-      name: functional_data
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.3.0"
   glob:
     dependency: transitive
     description:
@@ -263,13 +272,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.6.1+1"
-  json2yaml:
-    dependency: transitive
-    description:
-      name: json2yaml
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.0.1"
   json_annotation:
     dependency: transitive
     description:
@@ -340,13 +342,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.9.0"
-  plain_optional:
-    dependency: transitive
-    description:
-      name: plain_optional
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.1.3"
   pool:
     dependency: transitive
     description:
@@ -354,6 +349,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.4.0"
+  powerdart:
+    dependency: "direct main"
+    description:
+      path: "../../power_dart"
+      relative: true
+    source: path
+    version: "0.0.2"
   pub_semver:
     dependency: transitive
     description:
@@ -368,13 +370,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.1.5"
-  pubspec_yaml:
-    dependency: transitive
-    description:
-      name: pubspec_yaml
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "2.0.1"
   quiver:
     dependency: transitive
     description:
@@ -443,13 +438,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.5"
-  sum_types:
-    dependency: transitive
-    description:
-      name: sum_types
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.2.1+2"
   term_glyph:
     dependency: transitive
     description:
