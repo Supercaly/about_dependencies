@@ -1,0 +1,4 @@
+
+class Dependencies {
+  const Dependencies();
+}
