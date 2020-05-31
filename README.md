@@ -6,18 +6,11 @@ Automatically generate dart file with informations about used dependencies in pu
 
 To use this package add `about_dependencies` as a [dependency in your pubspec.yaml file.](https://flutter.dev/docs/development/packages-and-plugins/using-packages)
 
-Add the `@Dependencies` annotation to your class.
-Don't forget to add part statement after all the imports `part 'your-file.g.dart`
-
-Use the `dependencies` list of maps where-ever you want.
-Import the library.
+Import the generated file `import 'path_to_file';`.
 
 ```dart
-import 'package:about_dependencies/annotations.dart';
+import 'generated/dependencies.g.dart';
 
-part 'example_dependencies.g.dart';
-
-@Dependencies()
 class ExampleDependencies {
   void use() {
     // Use the generated code like a normal list object
@@ -28,4 +21,6 @@ class ExampleDependencies {
 
 ## Code Generation
 
-To generate the dependencies run the command: `flutter pub run build_runner build`
+To generate the dependencies run the command: `flutter pub run about_dependencies:generate`
+
+Use `flutter pub run about_dependencies:generate -h` to get more build options
